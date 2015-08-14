@@ -1,0 +1,16 @@
+.Hero {
+  width: 100%;
+  text-align: center;
+  background-color: #72C9B9;
+  position:absolute;
+  top:0;
+  bottom:0;
+}
+
+.Buildings {
+  max-width: 800px;
+  overflow: visible;
+  position:absolute;
+  bottom:5vh;
+  transform: translateX(-50%);
+}

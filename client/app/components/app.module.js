@@ -3,5 +3,6 @@
 angular.module('portfolio', [
   'portfolio.core',
   'portfolio.dash',
-  'portfolio.layout'
-])
+  'portfolio.layout',
+  'portfolio.widgets'
+]);

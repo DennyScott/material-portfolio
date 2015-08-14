@@ -1,4 +1,4 @@
-angular.module('convention')
+angular.module('portfolio.dash')
 
 .controller('DashCtrl', function($scope) {
   console.log('twelve');

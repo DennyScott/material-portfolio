@@ -8,7 +8,8 @@ requireDir('./tasks');
 gulp.task('default', [
   'dist',
   'sass',
-  'browser-sync'
+  'browser-sync',
+  'watch'
 ]);
 
 gulp.task('pre-push', ['default',

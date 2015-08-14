@@ -43,7 +43,7 @@ gulp.task('dist-tmp-html', function() {
   return gulp.src(['!index.html', 'components/**/*.html'], { cwd: paths.app })
   .pipe(htmlmin({collapseWhiteSpace: true}))
   .pipe(ngHtml2Js({
-    moduleName: 'convention',
+    moduleName: 'portfolio',
     stripPrefix: paths.app.replace(/\\/g, '/'),
     prefix: 'js/'
   }))
@@ -70,7 +70,7 @@ gulp.task('dist-copy-js', ['dist-tmp-js', 'dist-tmp-html', 'dist-tmp-deps'], fun
 });
 
 gulp.task('dist-min-images', function() {
-  return gulp.src('img/**/*')
+  return gulp.src(paths.app + 'img/*')
   .pipe(imagemin())
   .pipe(gulp.dest(paths.dist + 'img/'));
 });

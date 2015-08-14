@@ -1,0 +1,23 @@
+.logo {
+  position: absolute;
+  border-radius: 119px;
+  left: 50%;
+  top: 5vh;
+  height: 238px;
+  width: 238px;
+  background: #87d1c3;
+  margin-left: -119px;
+  z-index: 3;
+  transform:scale(0.8);
+
+  .logo-img {
+    background: url(../img/logo.png) left top no-repeat;
+    position: absolute;
+    left: 50%;
+    margin-left: -113px;
+    top: 35px;
+    height: 235px;
+    width: 225px;
+    z-index: 3;
+  }
+}
